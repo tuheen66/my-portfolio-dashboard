@@ -1,0 +1,181 @@
+[
+  {
+    "title": "Mediquick",
+    "sub_title": "An online medicine shop",
+    "image": "https://i.ibb.co.com/SwHK6bjF/Mediquick-small.jpg",
+    "full_image": "https://i.ibb.co.com/KpYr9nGx/Mediquick.png",
+    "technologies": [
+      "Next JS",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "JSON Web Token",
+      "Tailwind CSS",
+      "shadcn/ui"
+    ],
+
+    "features": [
+      "email: admin@mediquick.com",
+      "password: admin123",
+      "Any one can visit the website and go through the bicycle listings and check detail page",
+      "If any user wants to buy a product he/she needs to login first if registered already. if not registered then he/she needs to register first and then login to buy.",
+      "Once the order is placed he/she will be diverted to payment page where he/she can pay by card through stripe.",
+      "After login customer will be diverted to dashboard and he/she can see her profile. he/she can change his/her password by clicking change password button",
+      "Customer can see his/her order details in dashboard",
+      "Admin will see his dashboard after login and he will see the summery of the business as total order, total revenue and best selling product.",
+      "Admin can see all the users, can block any user's account.",
+      "Admin can see all the orders placed. can delete any order.",
+      "Admin can create product and update price and quantity and delete any order."
+    ],
+    "live_link": "https://mediquick-client.vercel.app/"
+  },
+
+  {
+    "title": "Heartsync",
+    "sub_title": "An online portal for matchmaking and matrimony",
+    "image": "https://i.ibb.co.com/FkdPjYcM/Heartsync.jpg",
+    "full_image": "https://i.ibb.co.com/673BL06y/Heartsync.jpg",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "JSON Web Token",
+      "Tailwind CSS"
+    ],
+
+    "features": [
+      "email: hassan.monirul@gmail.com",
+      "password: 123456",
+      "Users can browse and view existing biodatas.",
+      "Registration and login are required to view detailed biodata.",
+      "Logged in users cannot see the contact details in the biodata unless he/she is premium member. It is required to pay a $5.00 fee to view the contact details in the biodata for any regular users. Once $5.00 fee is paid and admin approves the payment regular logged in user can view contact details. he/she can also make any biodata as favorite with a click of a button.",
+      "Any registered user can request to make his/her biodata to be premium for free and Admin can see the request in the admin Dashboard panel and approves biodata to be premium. Similarly registered users can request to become premium member and Admin can see the request in the Admin panel and approves to become premium member with a click of a button. Admin can make any user Admin with a click of a button",
+      "Logged in user can upload or edit his/her biodata from user panel in dashboard. He/she can view his/her own biodata, contact request/approved and favorite biodata in user panel in dashboard",
+      "Total biodata page has pagination functionality. Moreover biodata can be filtered/ searched according to age, gender and permanent address."
+    ],
+    "live_link": "https://heartsync-5b928.web.app/"
+  },
+
+  {
+    "title": "Tourismo",
+    "sub_title": "An online tourism site for tour program and tour guide management",
+    "image": "https://i.ibb.co.com/LzhP1c6H/Tourismo.jpg",
+    "full_image": "https://i.ibb.co.com/ZvL72qc/Tourismo.jpg",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "JSON Web Token",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "email: hassan.monirul@gmail.com",
+      "password: 123456",
+      "Users can browse and view available tour packages as card form. They can also view available tour guides. However, registration and login are required to view detailed tour packages and guide details.",
+      "Logged in users can view package details and guide details. Logged in users can also book a tour and choose their desired tour guide for the tour.",
+
+      "Once the tour package and the tour guide is booked the guide can seed the booked tour in his dashboard. He can accept or reject the tour. when guide accepts the tour the tourist will see th list of tours in his/her dashboard with a button 'Pay' to pay for the tour. Until the tour is accepted tourist will see booking status 'In Review' and a'Cancel' button in the my booking link in the tourist dashboard.",
+
+      "There are bunch of tour types listed in the home page where user can click to view the specific tour type page.",
+      "Logged in user can click on the heart sight on tour card to make it listed in his/her wish list.",
+      "Logged in tourists can write reviews and the review will be displayed in the hme page review section.",
+      "Admin can make an user admin or guide. A registered user can request to become guide and update his/her profile in guide dashboard."
+    ],
+    "live_link": "https://tourismo-53356.web.app/"
+  },
+  {
+    "title": "Benevo",
+    "sub_title": "An online portal for volunteer program management",
+    "image": "https://i.ibb.co.com/S4zVp1mS/Benevo.jpg",
+    "full_image": "https://i.ibb.co.com/r2WKbKzn/Benevo.jpg",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "JSON Web Token",
+      "Tailwind CSS"
+    ],
+    "features": [
+      " Users can browse and view existing volunteer programs.However, registration and login are required to view program details.",
+      " Logged in user can view the details an can request to be a volunteer. However user cannot request to become volunteer in his/her own program. Logged in user can upload a volunteer program. Both his/her volunteer programs and request to become volunteer can be viewed under My Profile link.",
+      "My Profile has Add Volunteer link where user can add volunteer program. User can go to Manage Post where there are two tabs. Uploaded volunteer programs in one tab and request to be volunteer in other tab.",
+      "Need volunteer link has all the volunteer programs listed in two different ways. One in grid as cards and the other as table in rows. In both tabs programs can be search by name.",
+      "The website also has light and dark theme options."
+    ],
+    "live_link": "https://benevo-8b9b0.web.app/"
+  },
+  {
+    "title": "Colorful Canvas",
+    "sub_title": "A vibrant online shop for paintings and sketches with 6 unique categories.",
+    "image": "https://i.ibb.co.com/Df2GbmxD/Colorful-Canvas.jpg",
+    "full_image": "https://i.ibb.co.com/GzWvd03/Colorful-Canvas.jpg",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "features": [
+      " Users can browse and view existing paintings and sketches. However, registration and login are required to view detailed craft item information.",
+      "The homepage includes sections for each category, with a brief description for each. Clicking a category card redirects users to a page displaying all crafts within that category.",
+      "Users need to register to add new craft items. Registration options include email/password, Google sign-in, or GitHub sign-in.",
+      "Registered users can upload and edit their own craft items. They can also view their uploaded items but are restricted from seeing others' items."
+    ],
+    "live_link": "https://colorful-canvas-e0d1e.web.app/"
+  },
+  {
+    "title": "Travel Geek",
+    "sub_title": "An online travel blog site",
+    "image": "https://i.ibb.co.com/v6FHJ98d/Travel-Geek.jpg",
+    "full_image": "https://i.ibb.co.com/Y44XxXCJ/Travel-Geek.jpg",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Users can browse and view existing blog cards. However, registration and login are required to view blog details.",
+      "Logged in user can view details of the blog and and add the blog in their wish list. All wishlist blogs are displayed in the wishlist link and logged in user can view only his/her own wishlist items.",
+      "In the blog detail page user can make comments on the blog. However user cannot make comment on his/her own blog.",
+      "Logged in user can add his/her own blog in add blog page."
+    ],
+    "live_link": "https://blog-website-366b7.web.app/"
+  },
+  {
+    "title": "Elysian Motorways",
+    "sub_title": "An online shop for branded cars.",
+    "image": "https://i.ibb.co.com/vvwwQmSg/Elysian.jpg",
+    "full_image": "https://i.ibb.co.com/VW2x5hJY/Elysian.jpg",
+    "technologies": [
+      "React JS",
+      "Firebase Authentication",
+      "React Router",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Home page showcases all the brands the shop has to offer. Clicking on the card will take the user to the specific car's page where different models of the brand are displayed.",
+      "User needs to be registered and logged in to add a new product, view details of the model, update any model details or add model to cart.",
+      "Logged in user can add product to his/her cart and all cart items are displayed in cart page for logged in user only. Items can be removed from cart as well."
+    ],
+    "live_link": "https://brand-management-client.web.app/"
+  }
+]

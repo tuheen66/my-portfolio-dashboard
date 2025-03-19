@@ -1,0 +1,40 @@
+[
+    {
+    "position": "Merchandising Manager",
+    "startDate": "2017-07-01",
+    "endDate": "2020-02-29",
+    "company": "TexElegant",
+    "company-description": "Swedish Readymade Garments trading company",
+    "duties": [
+      "Managed the Merchandising Department, ensuring smooth operations and compliance with company policies.",
+      "Collaborated with management to achieve strategic goals, expand business, and maintain strong vendor relationships.",
+      "Supervised merchandising teams, organized product meetings in Bangladesh and Sweden, conducted weekly production meetings for coordination, and arranged factory visits for buyers."
+    ]
+  },
+
+  {
+    "position": "Merchandising Manager",
+    "startDate": "2015-05-01",
+    "endDate": "2017-06-30",
+    "company": "Dessin Wear",
+    "company-description": "Export Oriented Sweater (Flat Knit) manufacturer / exporter",
+    "duties": [
+      "Managed the Marketing and Merchandising department, handling communication with foreign buyers and price negotiations.",
+      "Oversaw sourcing of raw materials and verified consumption calculations for fabric, yarn, trims, and accessories.",
+      "Monitored work orders and supplier PIs, and organized weekly production meetings to update production status and ensure coordination."
+    ]
+  },
+  
+  {
+    "position": "Manager",
+    "startDate": "2010-01-01",
+    "endDate": "2015-04-30",
+    "company": "J-Tex Bangladesh Liaison Office",
+    "company-description": "Service oriented readymade garments buying house acting as the agents of various Dutch importers / retailers",
+    "duties": [
+      "Managed the overall operations of the Bangladesh office, overseeing teams of Merchandisers, Quality Assurance Supervisors, and Quality Controllers.",
+      "Sourced factories according to customer requirements and maintained strong relationships with clients and manufacturers.",
+      "Organized buying meetings between buyers and manufacturers, and handled sourcing of raw materials such as fabric and accessories."
+    ]
+  }
+]
