@@ -1,4 +1,5 @@
 import Sidebar from "@/components/Sidebar";
+import { PrimeReactProvider } from "primereact/api";
 import React from "react";
 
 const DashboardLayout = ({
@@ -12,7 +13,13 @@ const DashboardLayout = ({
         <div className="lg:w-3/12">
           <Sidebar />
         </div>
-        <div className=" lg:w-9/12  mx-12">{children}</div>
+        <div className=" lg:w-9/12  mx-12">
+        <PrimeReactProvider>
+
+        {children}
+        </PrimeReactProvider>
+        
+        </div>
       </div>
     </div>
   );

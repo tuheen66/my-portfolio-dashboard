@@ -49,6 +49,32 @@ const Sidebar = () => {
 
         <li>
           <Link
+            href="/dashboard/skills"
+            className={
+              pathName === "/dashboard/skills"
+                ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
+                : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
+            }
+          >
+            Skill Management
+          </Link>
+        </li>
+        
+        <li>
+          <Link
+            href="/dashboard/experience"
+            className={
+              pathName === "/dashboard/experience"
+                ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
+                : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
+            }
+          >
+            Experience Management
+          </Link>
+        </li>
+
+        <li>
+          <Link
             href="/dashboard/message"
             className={
               pathName === "/dashboard/message"

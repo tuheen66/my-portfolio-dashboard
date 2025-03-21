@@ -142,7 +142,7 @@ const AddProjectForm = () => {
 
             <div className="">
               <label
-                htmlFor="tech_1"
+                htmlFor="technologies"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Technologies (comma separated)
@@ -159,7 +159,7 @@ const AddProjectForm = () => {
 
             <div className="">
               <label
-                htmlFor="tech_1"
+                htmlFor="features"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Features (comma separated)

@@ -20,7 +20,10 @@ const DeleteBlogButton = ({
   };
 
   return (
-    <button className="btn btn-sm join-item bg-red-700 border-none text-white" onClick={handleDelete}>
+    <button
+      className="btn btn-sm join-item bg-red-600 border-none hover:bg-red-800 text-white font-normal"
+      onClick={handleDelete}
+    >
       Delete
     </button>
   );

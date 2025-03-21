@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use server";
 
-import { IBlog, IFormInput } from "@/utils/Types/types";
+import { TBlog } from "@/utils/Types";
 
-export const createBlog = async (data: IBlog) => {
+
+
+export const createBlog = async (data: TBlog) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blogs`, {
     method: "POST",
     headers: {
@@ -34,7 +36,7 @@ export const getSingleBlog = async (id: string) => {
   return blogs;
 };
 
-export const updateBlog = async (id: string, updatedData: IFormInput) => {
+export const updateBlog = async (id: string, updatedData: TBlog) => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BACKEND_URL}/blogs/${id}`,
     {

@@ -38,23 +38,10 @@ export interface IFormInput {
   title?: string | undefined;
   sub_title?: string;
   author?: string | undefined;
-  image: string ;
-  category: string ;
-  blog: string ;
-  blogId: string;
-}
-
-export interface IBlog {
-  _id: string;
-  name: string;
-  email: string;
-  message: string;
-  title?: string;
-  author?: string;
   image: string;
   category: string;
   blog: string;
-  blogId?: string; // Added the missing property
+  blogId: string;
 }
 
 
@@ -89,4 +76,12 @@ export type TExperience = {
   company: string;
   companyDescription: string;
   duties: string[];
+};
+
+export type TUser = {
+  _id?: string;
+  email: string;
+  password: string;
+ 
+
 };
