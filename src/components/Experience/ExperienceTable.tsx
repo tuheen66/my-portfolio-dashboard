@@ -18,7 +18,7 @@ const ExperienceTable = () => {
 
   return (
     <div>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto w-[90%] mx-auto">
         <table className="table text-slate-900  dark:text-white">
           {/* head */}
           <thead className="text-slate-700  dark:text-white">
@@ -43,7 +43,7 @@ const ExperienceTable = () => {
                 <td>
                   <div className="join join-vertical">
                     <Link href={`/dashboard/experience/${experience._id}`}>
-                      <button className="btn btn-sm join-item bg-green-600 hover:bg-green-800 border-none text-white font-normal">
+                      <button className="btn btn-sm  bg-green-600 hover:bg-green-800 border-none text-white font-normal">
                         Update
                       </button>
                     </Link>

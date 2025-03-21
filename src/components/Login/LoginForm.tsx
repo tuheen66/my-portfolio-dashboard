@@ -21,19 +21,23 @@ const LoginForm = () => {
     };
 
     try {
-        const res = await loginUser(userData);
-        if (res && res.success) {
-          Swal.fire("Logged in successfully !!!");
-          router.push("/dashboard");
-        } else {
-          // Handle login failure
-          Swal.fire("Login failed", res?.message || "An error occurred", "error");
-        }
-      } catch (err: any) {
-        // Handle unexpected errors
-        Swal.fire("Error", err.message || "An unexpected error occurred", "error");
-        console.error(err);
+      const res = await loginUser(userData);
+      if (res && res.success) {
+        Swal.fire("Logged in successfully !!!");
+        router.push("/dashboard");
+      } else {
+        // Handle login failure
+        Swal.fire("Login failed", res?.message || "An error occurred", "error");
       }
+    } catch (err: any) {
+      // Handle unexpected errors
+      Swal.fire(
+        "Error",
+        err.message || "An unexpected error occurred",
+        "error"
+      );
+      console.error(err);
+    }
   };
   return (
     <div className="flex flex-col lg:flex-row w-[90%] mx-auto items-center min-h-screen justify-center gap-12 ">
@@ -68,7 +72,7 @@ const LoginForm = () => {
           </div>
 
           <input
-            className=" bg-[#e67e22] py-1 rounded-lg w-full border-none text-white text-lg mt-6 hover:bg-[#30336b] "
+            className=" bg-orange-600 hover:bg-orange-800 py-1 rounded-lg w-full border-none text-white text-lg mt-6  "
             type="submit"
             value="Login"
           />

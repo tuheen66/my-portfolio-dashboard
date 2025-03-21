@@ -41,7 +41,7 @@ const BlogTable = () => {
                 </tr>
               </thead>
               <tbody>
-                {blogs.map((blog: TBlog, index: number) => (
+                {blogs?.map((blog: TBlog, index: number) => (
                   <tr key={index}>
                     <td>{index + 1}</td>
                     <td>

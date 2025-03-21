@@ -76,7 +76,7 @@ const UpdateProject = () => {
   return (
     <div>
       <div>
-        <div className="w-full max-w-xl mx-auto my-12 p-4 bg-slate-300 border border-gray-200  shadow-2xl shadow-slate-600 sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 rounded-xl ">
+        <div className="w-[90%] max-w-xl  md:w-[90%] mx-auto my-12 p-4 bg-slate-300 border border-gray-200  shadow-2xl shadow-slate-600 sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 rounded-xl ">
           <h5 className="text-2xl font-bold text-gray-700 dark:text-white text-center">
             Update Project
           </h5>
@@ -166,7 +166,7 @@ const UpdateProject = () => {
                 htmlFor="tech_1"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Technologies
+                Technologies (comma separated)
               </label>
               <textarea
                 defaultValue={detailTechnologies}
@@ -184,7 +184,7 @@ const UpdateProject = () => {
                 htmlFor="tech_1"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Features
+                Features (comma separated)
               </label>
               <textarea
                 defaultValue={detailFeatures}
@@ -216,7 +216,7 @@ const UpdateProject = () => {
               />
             </div>
 
-            <button className="btn px-6 bg-[#d35400] text-white  hover:text-blue-500 hover:bg-orange-400">
+            <button className=" px-6 py-2 rounded-lg bg-orange-600 text-white  hover:bg-orange-800 font-normal border-none">
               Submit
             </button>
           </form>

@@ -6,7 +6,7 @@ import React from "react";
 const ManageExperiencePage = () => {
   return (
     <div className="min-h-screen ">
-      <div className="my-12">
+      <div className="my-12 w-[90%] mx-auto">
         <div className=" flex justify-between items-center">
           <h1 className="text-2xl font-semibold text-slate-700 dark:text-white">
             My Experiences

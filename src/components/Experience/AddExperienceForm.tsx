@@ -47,7 +47,7 @@ const AddExperienceForm = () => {
 
   return (
     <div>
-      <div className="w-full max-w-xl mx-auto my-12 p-4 border border-gray-200  shadow-2xl shadow-slate-600 sm:p-6 md:p-8 bg-slate-400 dark:bg-slate-900 text-black dark:text-white rounded-xl ">
+      <div className="w-[90%] max-w-xl mx-auto my-12 p-4 border border-gray-200  shadow-2xl shadow-slate-600 sm:p-6 md:p-8 bg-slate-400 dark:bg-slate-900 text-black dark:text-white rounded-xl ">
 
       <h2 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-6">
           Add a new Experience

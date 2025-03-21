@@ -1,10 +1,18 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
+import { logout } from "@/utils/actions/UserService";
 
 const Sidebar = () => {
+  const router = useRouter();
   const pathName = usePathname();
+
+  const handleLogout = () => {
+    logout();
+    router.push("/login");
+  };
+
   return (
     <div className="bg-slate-900 dark:bg-gray-300 h-full py-4 px-8 dark:text-slate-900  text-white">
       <ul className="space-y-4 mx-auto">
@@ -59,7 +67,7 @@ const Sidebar = () => {
             Skill Management
           </Link>
         </li>
-        
+
         <li>
           <Link
             href="/dashboard/experience"
@@ -86,16 +94,17 @@ const Sidebar = () => {
           </Link>
         </li>
         <hr className="border-b-2  border-[#e67e22]" />
+
         <li>
-          <Link
-            href="/login"
+          <button
+            onClick={handleLogout}
             className="flex items-center space-x-2 py-2 rounded-md dark:text-slate-900  text-white"
           >
-            Login
-          </Link>
+            Logout
+          </button>
         </li>
 
-        <ThemeToggle/>
+        <ThemeToggle />
       </ul>
     </div>
   );

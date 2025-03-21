@@ -1,7 +1,12 @@
+import Dashboard from "@/components/Dashboard/Dashboard";
+
 const DashboardPage = async () => {
   return (
     <div className="">
-      <div className="flex flex-col text-slate-900 dark:text-white justify-center items-center space-y-4 min-h-screen mx-auto "></div>
+      <div className=" text-slate-900 dark:text-white justify-center items-center space-y-4 min-h-screen mx-auto ">
+
+        <Dashboard/>
+      </div>
     </div>
   );
 };

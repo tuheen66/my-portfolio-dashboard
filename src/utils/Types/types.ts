@@ -19,17 +19,6 @@ export interface IProjectInfo {
   live_link: string;
 }
 
-// export interface IFormInput {
-//   _id: string;
-//   name: string;
-//   email: string;
-//   message: string;
-//   title?:string;
-//   author?:string;
-//   image: string;
-//   blog: string;
-// }
-
 export interface IFormInput {
   _id: string;
   name: string;
@@ -43,8 +32,6 @@ export interface IFormInput {
   blog: string;
   blogId: string;
 }
-
-
 
 export type TSkill = {
   _id?: string;
@@ -82,6 +69,11 @@ export type TUser = {
   _id?: string;
   email: string;
   password: string;
- 
+};
 
+export type TMessage = {
+  name: string;
+  email: string;
+  message: string;
+  _id: string;
 };
