@@ -35,28 +35,7 @@ const UpdateBlog = () => {
     getBlog();
   }, [blogId, reset]);
 
-  // const onSubmit: SubmitHandler<TBlog> = async (data: TBlog) => {
-  //   const updatedData = {
-  //     ...data,
-  //     title: data.title || "",
-  //     author: data.author || "",
-  //     image: data.image || "",
-  //     category: data.category || "",
-  //     blogContent: text,
-  //   };
-
-  //   const res = await updateBlog(blogId as string, updatedData);
-  //   console.log(res)
-  //   try {
-  //     if (res.modifiedCount > 0) {
-  //       Swal.fire("Blog updated successfully !!!");
-
-  //       router.push("/dashboard/blogs");
-  //     }
-  //   } catch (err: any) {
-  //     console.log(err.message);
-  //   }
-  // };
+  
 
     const onSubmit: SubmitHandler<TBlog> = async (data: TBlog) => {
       const blogData = {
@@ -72,7 +51,7 @@ const UpdateBlog = () => {
         if (res.insertedId) {
           Swal.fire("Blog posted successfully !!!");
 
-          router.push("/dashboard/blogs");
+          router.push("/blogs");
         }
       } catch (err: any) {
         console.log(err.message);

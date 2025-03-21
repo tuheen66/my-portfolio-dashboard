@@ -24,7 +24,7 @@ const LoginForm = () => {
       const res = await loginUser(userData);
       if (res && res.success) {
         Swal.fire("Logged in successfully !!!");
-        router.push("/dashboard");
+        router.push("/");
       } else {
         // Handle login failure
         Swal.fire("Login failed", res?.message || "An error occurred", "error");

@@ -28,7 +28,7 @@ const AddBlog = () => {
       if (res.insertedId) {
         Swal.fire("Blog posted successfully !!!");
 
-        router.push("/dashboard/blogs");
+        router.push("/blogs");
       }
     } catch (err: any) {
       console.log(err.message);

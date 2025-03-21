@@ -18,9 +18,9 @@ const Sidebar = () => {
       <ul className="space-y-4 mx-auto">
         <li>
           <Link
-            href="/dashboard"
+            href="/"
             className={
-              pathName === "/dashboard"
+              pathName === "/"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }
@@ -31,9 +31,9 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/blogs"
+            href="/blogs"
             className={
-              pathName === "/dashboard/blogs"
+              pathName === "/blogs"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }
@@ -44,9 +44,9 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/projects"
+            href="/projects"
             className={
-              pathName === "/dashboard/projects"
+              pathName === "/projects"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }
@@ -57,9 +57,9 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/skills"
+            href="/skills"
             className={
-              pathName === "/dashboard/skills"
+              pathName === "/skills"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }
@@ -70,9 +70,9 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/experience"
+            href="/experience"
             className={
-              pathName === "/dashboard/experience"
+              pathName === "/experience"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }
@@ -83,9 +83,9 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/message"
+            href="/message"
             className={
-              pathName === "/dashboard/message"
+              pathName === "/message"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }

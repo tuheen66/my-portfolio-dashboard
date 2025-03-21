@@ -66,7 +66,7 @@ const UpdateProject = () => {
       const res = await updateProject(projectId as string, projectInfo);
       if (res.modifiedCount > 0) {
         Swal.fire("Project updated successfully !!!");
-        router.push("/dashboard/projects");
+        router.push("/projects");
       }
     } catch (err: any) {
       console.log(err.message);

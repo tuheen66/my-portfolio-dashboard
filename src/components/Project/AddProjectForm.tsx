@@ -48,7 +48,7 @@ const AddProjectForm = () => {
       const res = await createProject(projectInfo);
       if (res.insertedId) {
         Swal.fire("Project created successfully !!!");
-        router.push("/dashboard/projects");
+        router.push("/projects");
       }
     } catch (err: any) {
       console.log(err.message);
