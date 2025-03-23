@@ -64,7 +64,7 @@ const BlogTable = () => {
 
                     <td>
                       <div className="join join-vertical">
-                        <Link href={`/blogs/${blog._id}`}>
+                        <Link href={`/dashboard/blogs/${blog._id}`}>
                           <button className="btn btn-sm join-item border-none text-white bg-green-600 hover:bg-green-800 font-normal">
                             Update
                           </button>

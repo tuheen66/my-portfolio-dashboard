@@ -65,7 +65,7 @@ const UpdateExperiencePage = () => {
       );
       if (res.modifiedCount > 0) {
         Swal.fire("Experience updated successfully !!!");
-        router.push("/experience");
+        router.push("/dashboard/experience");
       }
     } catch (err: any) {
       console.log(err.message);

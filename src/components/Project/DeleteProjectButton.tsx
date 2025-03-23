@@ -11,7 +11,7 @@ const DeleteProjectButton = ({
         const backendUrl =
           process.env.NEXT_PUBLIC_BACKEND_URL || "https://fallback-url.com";
     
-        const res = await fetch(`${backendUrl}/projects/${id}`, {
+        const res = await fetch(`${backendUrl}/dashboard/projects/${id}`, {
           method: "DELETE",
         });
         if (res.ok) {

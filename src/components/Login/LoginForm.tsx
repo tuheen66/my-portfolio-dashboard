@@ -13,32 +13,27 @@ const LoginForm = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
-
-    const userData = {
-      email,
-      password,
-    };
-
+  
+    const userData = { email, password };
+  
     try {
       const res = await loginUser(userData);
       if (res && res.success) {
         Swal.fire("Logged in successfully !!!");
-        router.push("/");
+        
+        // Redirect to the home page (or secured page)
+        router.push("/"); // Replace with any other secured page if needed
       } else {
-        // Handle login failure
         Swal.fire("Login failed", res?.message || "An error occurred", "error");
       }
     } catch (err: any) {
-      // Handle unexpected errors
-      Swal.fire(
-        "Error",
-        err.message || "An unexpected error occurred",
-        "error"
-      );
-      console.error(err);
+      Swal.fire("Error", err.message || "An unexpected error occurred", "error");
     }
   };
+  
+  
+
+
   return (
     <div className="flex flex-col lg:flex-row w-[90%] mx-auto items-center min-h-screen justify-center gap-12 ">
       <div className=" lg:w-[30%] bg-white p-6  text-gray-700 my-8 rounded-lg">

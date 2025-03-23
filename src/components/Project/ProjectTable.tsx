@@ -62,7 +62,7 @@ const ProjectTable = () => {
 
                 <td>
                   <div className="join join-vertical">
-                    <Link href={`/projects/${project._id}`}>
+                    <Link href={`/dashboard/projects/${project._id}`}>
                       <button className="btn btn-sm join-item bg-green-600 hover:bg-green-800 border-none text-white font-normal">
                         Update
                       </button>

@@ -2,8 +2,6 @@
 
 import { IFormInput } from "@/utils/Types";
 
-
-
 export const postMessage = async (data: IFormInput) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/message`, {
     method: "POST",
@@ -19,6 +17,13 @@ export const postMessage = async (data: IFormInput) => {
 
 export const getAllMessage = async () => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/message`);
+
+  if (!res.ok) {
+    throw new Error(
+      `Failed to fetch projects: ${res.status} ${res.statusText}`
+    );
+  }
+
   const messages = await res.json();
   return messages;
 };
