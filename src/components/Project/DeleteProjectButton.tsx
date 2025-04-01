@@ -19,7 +19,7 @@ const DeleteProjectButton = ({
 
   return (
     <button
-      className="btn btn-sm join-item bg-red-600 hover:bg-red-800 border-none font-normal text-white"
+      className="btn btn-sm join-item text-gray-800 bg-slate-400 hover:bg-red-600 hover:text-white border-none font-normal "
       onClick={handleDelete}
     >
       Delete

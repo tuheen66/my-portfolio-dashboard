@@ -62,8 +62,8 @@ const ProjectTable = () => {
 
                 <td>
                   <div className="join join-vertical">
-                    <Link href={`/dashboard/projects/${project._id}`}>
-                      <button className="btn btn-sm join-item bg-green-600 hover:bg-green-800 border-none text-white font-normal">
+                    <Link href={`/admin/projects/${project._id}`}>
+                      <button className="btn btn-sm join-item text-gray-800 bg-slate-200 hover:bg-green-600 hover:text-white border-none  font-normal">
                         Update
                       </button>
                     </Link>

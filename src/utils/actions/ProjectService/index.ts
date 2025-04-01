@@ -38,7 +38,7 @@ export const getSingleProject = async (id: string) => {
     `${process.env.NEXT_PUBLIC_BACKEND_URL}/projects/${id}`
   );
   const project = await res.json();
-  return project;
+  return project.data;
 };
 
 export const updateProject = async (id: string, updatedData: IProjectInfo) => {

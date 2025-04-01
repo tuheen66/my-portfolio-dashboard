@@ -51,122 +51,112 @@ const AddExperienceForm = () => {
   };
 
   return (
-    <div>
-      <div className="w-[90%] max-w-xl mx-auto my-12 p-4 border border-gray-200  shadow-2xl shadow-slate-600 sm:p-6 md:p-8 bg-slate-400 dark:bg-slate-900 text-black dark:text-white rounded-xl ">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-6">
-          Add a new Experience
-        </h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label
-              htmlFor="position"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Position
-            </label>
-
-            <input
-              name="position"
-              type="text"
-              id="position"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block rounded-lg w-full p-2.5 mb-4 "
-              placeholder="Position"
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="company"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Company
-            </label>
-
-            <input
-              name="company"
-              type="text"
-              id="company"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block rounded-lg w-full p-2.5 mb-4 "
-              placeholder="Company"
-              required
-            />
-          </div>
-
-          <div>
-            <label
-              htmlFor="companyDescription"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Company Description
-            </label>
-
-            <input
-              name="companyDescription"
-              type="text"
-              id="companyDescription"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block rounded-lg w-full p-2.5 mb-4 "
-              placeholder="Company Description"
-              required
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label
-                htmlFor="startDate"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >
-                Start Date
-              </label>
-
-              <input
-                name="startDate"
-                type="date"
-                id="startDate"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block rounded-lg w-full p-2.5 mb-4 "
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="endDate"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >
-                End Date
-              </label>
-
-              <input
-                name="endDate"
-                type="date"
-                id="endDate"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block rounded-lg w-full p-2.5 mb-4 "
-                required
-              />
-            </div>
-          </div>
-
-          <div className="">
-            <label
-              htmlFor="duties"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Duties and Responsibilities (comma separated)
-            </label>
-            <textarea
-              id="duties"
-              name="duties"
-              placeholder="Duties and Responsibilities"
-              className="bg-gray-50 border border-gray-300 rounded-lg text-gray-900 text-sm block w-full p-2.5 mb-4 "
-            ></textarea>
-          </div>
-
-          <button className="btn btn-sm px-6 bg-orange-500 border-none font-normal  text-white  hover:bg-orange-800">
-            Submit
-          </button>
-        </form>
-      </div>
+    <div className="max-w-2xl mx-auto my-12">
+  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-700">
+    <div className="p-6 bg-gradient-to-r from-slate-500 to-slate-800">
+      <h2 className="text-2xl font-bold text-center text-white">
+        Add New Experience
+      </h2>
     </div>
+    
+    <form onSubmit={handleSubmit} className="p-6 space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-2">
+          <label htmlFor="position" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            Position *
+          </label>
+          <input
+            name="position"
+            type="text"
+            id="position"
+            className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600  dark:bg-gray-700 dark:text-white transition-all"
+            placeholder="Senior Developer"
+            required
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            Company *
+          </label>
+          <input
+            name="company"
+            type="text"
+            id="company"
+            className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600  dark:bg-gray-700 dark:text-white transition-all"
+            placeholder="Tech Corp Inc."
+            required
+          />
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        <label htmlFor="companyDescription" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          Company Description *
+        </label>
+        <input
+          name="companyDescription"
+          type="text"
+          id="companyDescription"
+          className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600  dark:bg-gray-700 dark:text-white transition-all"
+          placeholder="Leading SaaS provider in the tech industry"
+          required
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-2">
+          <label htmlFor="startDate" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            Start Date *
+          </label>
+          <input
+            name="startDate"
+            type="date"
+            id="startDate"
+            className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600  dark:bg-gray-700 dark:text-white transition-all text-gray-400"
+            required
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label htmlFor="endDate" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            End Date *
+          </label>
+          <input
+            name="endDate"
+            type="date"
+            id="endDate"
+            className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600  dark:bg-gray-700 dark:text-white transition-all text-gray-400"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        <label htmlFor="duties" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          Duties and Responsibilities *
+        </label>
+        <textarea
+          id="duties"
+          name="duties"
+          rows={4}
+          placeholder="List responsibilities separated by commas (e.g., Developed new features, Optimized performance, Led team meetings)"
+          className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600  dark:bg-gray-700 dark:text-white transition-all"
+        ></textarea>
+        <p className="text-xs text-gray-500 dark:text-gray-400">Separate each duty with a comma</p>
+      </div>
+
+      <div className="pt-4">
+        <button
+          type="submit"
+          className="btn btn-sm border-none text-white bg-orange-500 hover:bg-orange-800 font-normal"
+        >
+          Save Experience
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
   );
 };
 
