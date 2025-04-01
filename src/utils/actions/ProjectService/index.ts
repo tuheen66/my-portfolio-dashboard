@@ -27,7 +27,7 @@ export const getAllProjects = async () => {
       );
     }
 
-    return response;
+    return response.data;
   } catch (error: any) {
     console.log(error);
   }
@@ -56,3 +56,5 @@ export const updateProject = async (id: string, updatedData: IProjectInfo) => {
 
   return project;
 };
+
+

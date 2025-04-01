@@ -22,7 +22,7 @@ const LoginForm = () => {
         Swal.fire("Logged in successfully !!!");
         
         // Redirect to the home page (or secured page)
-        router.push("/"); // Replace with any other secured page if needed
+        router.push("/admin/admin"); // Replace with any other secured page if needed
       } else {
         Swal.fire("Login failed", res?.message || "An error occurred", "error");
       }

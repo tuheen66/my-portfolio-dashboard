@@ -10,7 +10,7 @@ const BlogsManagement = () => {
         <h1 className="text-center text-3xl mb-8 text-slate-700 dark:text-white">
           All Blogs
         </h1>
-        <Link href="/blogs/addBlog">
+        <Link href="/admin/blogs/addBlog">
           <button className="btn btn-sm border-none text-white bg-orange-500 hover:bg-orange-800 font-normal">
             Add Blog
           </button>

@@ -3,8 +3,6 @@
 
 import { TBlog } from "@/utils/Types";
 
-
-
 export const createBlog = async (data: TBlog) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blogs`, {
     method: "POST",
@@ -24,7 +22,7 @@ export const getAllBlogs = async () => {
     const blogs = await res.json();
 
     console.log(blogs);
-    return blogs;
+    return blogs.data;
   } catch (error: any) {
     console.log(error);
   }
@@ -33,7 +31,7 @@ export const getAllBlogs = async () => {
 export const getSingleBlog = async (id: string) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blogs/${id}`);
   const blogs = await res.json();
-  return blogs;
+  return blogs.data;
 };
 
 export const updateBlog = async (id: string, updatedData: TBlog) => {
@@ -48,6 +46,5 @@ export const updateBlog = async (id: string, updatedData: TBlog) => {
     }
   );
   const blogs = await res.json();
-
   return blogs;
 };

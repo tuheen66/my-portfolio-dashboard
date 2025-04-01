@@ -19,7 +19,7 @@ const AddSkillForm = () => {
     };
     try {
       const res = await addSkill(skill);
-      if (res.insertedId) {
+      if (res.success) {
         Swal.fire("Skill added successfully !!!");
         form.reset()
         console.log(skill);

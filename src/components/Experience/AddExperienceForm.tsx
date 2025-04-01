@@ -2,9 +2,12 @@
 "use client";
 
 import { addExperience } from "@/utils/actions/ExperienceService";
+import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 
 const AddExperienceForm = () => {
+
+  const router = useRouter()
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
@@ -36,9 +39,11 @@ const AddExperienceForm = () => {
     console.log(experienceInfo);
     try {
       const res = await addExperience(experienceInfo);
-      if (res.insertedId) {
+      console.log(res);
+      if (res.success) {
         Swal.fire("Experience added successfully !!!");
         form.reset();
+        router.push("/admin/experience")
       }
     } catch (err: any) {
       console.log(err.message);
@@ -48,8 +53,7 @@ const AddExperienceForm = () => {
   return (
     <div>
       <div className="w-[90%] max-w-xl mx-auto my-12 p-4 border border-gray-200  shadow-2xl shadow-slate-600 sm:p-6 md:p-8 bg-slate-400 dark:bg-slate-900 text-black dark:text-white rounded-xl ">
-
-      <h2 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-6">
+        <h2 className="text-2xl font-semibold text-center text-gray-800 dark:text-white mb-6">
           Add a new Experience
         </h2>
         <form onSubmit={handleSubmit}>

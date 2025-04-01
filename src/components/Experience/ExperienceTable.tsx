@@ -42,7 +42,7 @@ const ExperienceTable = () => {
 
                 <td>
                   <div className="join join-vertical">
-                    <Link href={`/dashboard/experience/${experience._id}`}>
+                    <Link href={`/admin/experience/${experience._id}`}>
                       <button className="btn btn-sm  bg-green-600 hover:bg-green-800 border-none text-white font-normal">
                         Update
                       </button>

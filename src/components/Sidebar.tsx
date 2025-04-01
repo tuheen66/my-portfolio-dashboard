@@ -18,9 +18,9 @@ const Sidebar = () => {
       <ul className="space-y-4 mx-auto">
         <li>
           <Link
-            href="/"
+            href="/admin/admin"
             className={
-              pathName === "/"
+              pathName === "/admin/admin"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
                 : "dark:hover:text-gray-800 hover:text-gray-400 hover:underline"
             }
@@ -31,7 +31,7 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/blogs"
+            href="/admin/blogs"
             className={
               pathName === "/dashboard/blogs"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
@@ -44,7 +44,7 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/projects"
+            href="/admin/projects"
             className={
               pathName === "/dashboard/projects"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
@@ -57,7 +57,7 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/skills"
+            href="/admin/skills"
             className={
               pathName === "/dashboard/skills"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
@@ -70,7 +70,7 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/experience"
+            href="/admin/experience"
             className={
               pathName === "/dashboard/experience"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"
@@ -83,7 +83,7 @@ const Sidebar = () => {
 
         <li>
           <Link
-            href="/dashboard/message"
+            href="/admin/message"
             className={
               pathName === "/dashboard/message"
                 ? "bg-slate-400 dark:bg-slate-500 w-full px-4 py-1 text-slate-900 dark:text-white rounded-lg"

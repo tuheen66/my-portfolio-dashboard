@@ -14,16 +14,16 @@ export const getAllExperiences = async () => {
       );
     }
 
-    return response;
+    return response.data;
   } catch (error: any) {
     console.log(error);
   }
 };
 
-export const getSingleExperience = async (experienceId: string) => {
+export const getSingleExperience = async (id: string) => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}/experience/${experienceId}`
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/experience/${id}`
     );
 
     if (!res.ok) {
@@ -32,7 +32,8 @@ export const getSingleExperience = async (experienceId: string) => {
       );
     }
 
-    return res.json();
+    const result = await res.json();
+    return result.data;
   } catch (error: any) {
     console.log(error);
   }
@@ -55,7 +56,7 @@ export const updateExperience = async (
     );
 
     const experience = res.json();
-    
+
     return experience;
   } catch (error: any) {
     console.log(error);

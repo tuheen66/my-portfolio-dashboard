@@ -25,5 +25,5 @@ export const getAllMessage = async () => {
   }
 
   const messages = await res.json();
-  return messages;
+  return messages.data;
 };

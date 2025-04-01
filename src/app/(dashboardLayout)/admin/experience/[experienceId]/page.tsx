@@ -25,9 +25,9 @@ const UpdateExperiencePage = () => {
     getExperience();
   }, [experienceId]);
 
-  console.log(experience);
+ 
 
-  const detailDuties = experience?.duties.join(",");
+  const detailDuties = experience?.duties?.join(",");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -63,7 +63,8 @@ const UpdateExperiencePage = () => {
         experienceId as string,
         experienceInfo
       );
-      if (res.modifiedCount > 0) {
+      console.log(res)
+      if (res.success) {
         Swal.fire("Experience updated successfully !!!");
         router.push("/dashboard/experience");
       }

@@ -25,10 +25,10 @@ const AddBlog = () => {
     try {
       const res = await createBlog(blogData);
 
-      if (res.insertedId) {
+      if (res.success) {
         Swal.fire("Blog posted successfully !!!");
 
-        router.push("/dashboard/blogs");
+        router.push("/admin/blogs");
       }
     } catch (err: any) {
       console.log(err.message);

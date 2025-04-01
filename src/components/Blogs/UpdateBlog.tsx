@@ -35,28 +35,28 @@ const UpdateBlog = () => {
     getBlog();
   }, [blogId, reset]);
 
-  
-
-    const onSubmit: SubmitHandler<TBlog> = async (data: TBlog) => {
-      const blogData = {
-        ...data,
-        blogContent: text,
-      };
-
-      console.log(blogData);
-
-      try {
-        const res = await updateBlog(blogId as string, blogData);
-
-        if (res.insertedId) {
-          Swal.fire("Blog posted successfully !!!");
-
-          router.push("/dashboard/blogs");
-        }
-      } catch (err: any) {
-        console.log(err.message);
-      }
+  const onSubmit: SubmitHandler<TBlog> = async (data: TBlog) => {
+    const blogData = {
+      ...data,
+      blogContent: text,
     };
+
+
+
+    try {
+      const res = await updateBlog(blogId as string, blogData);
+
+      console.log(res);
+      
+      if (res.success) {
+        Swal.fire("Blog posted successfully !!!");
+
+        router.push("/admin/blogs");
+      }
+    } catch (err: any) {
+      console.log(err.message);
+    }
+  };
   return (
     <div>
       <div>
