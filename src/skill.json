@@ -1,0 +1,50 @@
+[
+    {
+        "logo": "https://i.ibb.co.com/LhHgGVyt/html.png",
+        "name": "HTML5"
+    },
+    {
+        "logo": "https://i.ibb.co.com/DfPzmK4z/css.png",
+        "name": "CSS3"
+    },
+    {
+        "logo": "https://i.ibb.co.com/gb6ZqF7w/tailwind.png",
+        "name": "TailwindCSS"
+    },
+    {
+        "logo": "https://i.ibb.co.com/CsSvvrSC/javascript.png",
+        "name": "JavaScript"
+    },
+    {
+        "logo": "https://i.ibb.co.com/LzXckhbF/typescript-resize.png",
+        "name": "TypeScript"
+    },
+    {
+        "logo": "https://i.ibb.co.com/3YQqm3tQ/react.png",
+        "name": "React Js"
+    },
+    {
+        "logo": "https://i.ibb.co.com/5hNnLJbQ/nextjs.png",
+        "name": "Next Js"
+    },
+    {
+        "logo": "https://i.ibb.co.com/sdYBS2Jc/redux.png",
+        "name": "Redux"
+    },
+    {
+        "logo": "https://i.ibb.co.com/23B7CR5W/nodejs.png",
+        "name": "Node Js"
+    },
+    {
+        "logo": "https://i.ibb.co.com/3m8zX2p3/express.png",
+        "name": "Express Js"
+    },
+    {
+        "logo": "https://i.ibb.co.com/xqyBNjHL/firebase.png",
+        "name": "Firebase"
+    },
+    {
+        "logo": "https://i.ibb.co.com/DfC9BCBX/mongodab.png",
+        "name": "Mongodb"
+    }
+]
